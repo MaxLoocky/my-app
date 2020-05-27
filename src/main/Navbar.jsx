@@ -4,20 +4,20 @@ import s from './Navbar.module.css';
 function Navbar () {
   return (
     <nav className={s.Navbar}>
-        <div className={s.Item}>
-            <a src="#">Profile</a>
+        <div className={`${s.Item} ${s.Activ}`}>
+            <a href="#" className={s.Url}>Profile</a>
         </div>
         <div className={s.Item}>
-            <a src="#">Messages</a>
+            <a href="#" className={s.Url}>Messages</a>
         </div>
         <div className={s.Item}>
-            <a src="#">News</a>
+            <a href="#" className={s.Url}>News</a>
         </div>
         <div className={s.Item}>
-            <a src="#">Music</a>
+            <a href="#" className={s.Url}>Music</a>
         </div>
         <div className={s.Item}>
-            <a src="#">Settings</a>
+            <a href="#" className={s.Url}>Settings</a>
         </div>
     </nav>
   );

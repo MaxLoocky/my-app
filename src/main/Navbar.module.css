@@ -3,6 +3,15 @@
     background-color: green;
   }
 
-.Item {
+.Item a {
     color: white;
+    text-decoration: none;
+}
+
+.Item a:hover {
+  color: black;
+}
+
+.Activ a {
+  color: gold;
 }
