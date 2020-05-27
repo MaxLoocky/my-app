@@ -1,31 +1,15 @@
 * {margin: 0; padding: 0;}
+
 .App {
+  width: 1200px;
   display: grid;
   grid-gap: 5px;
-
-  grid-template-columns: 1fr 4fr;
+  
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
   grid-template-areas: 
     "Header Header"
-    "Navbar Content"
+    "Navbar Profile"
     "Footer Footer"; 
 }
 
-.Header {
-  grid-area: Header;
-  background-color: aqua;
-}
-
-.Navbar {
-  grid-area: Navbar;
-  background-color: yellow;
-}
-
-.Content {
-  grid-area: Content;
-  background-color: green;
-}
-
-.Footer {
-  grid-area: Footer;
-  background-color: orange;
-}
