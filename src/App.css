@@ -13,3 +13,7 @@
     "Footer Footer"; 
 }
 
+.AppContent {
+  grid-area: Profile;
+  background-color: green;
+}
