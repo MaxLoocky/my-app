@@ -5,9 +5,12 @@
     
 }
 
-.DialogsItems .Dialog {
+.DialogsItems  {
     padding: 10px;
-    
+}
+
+.DialogsItems a {
+    color: white;
 }
 
 .DialogsItems .active {
@@ -17,4 +20,5 @@
 
 .Messages .Message {
     padding: 10px;
+    color: white;
 }
