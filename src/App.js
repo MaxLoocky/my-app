@@ -17,8 +17,19 @@ function App(props) {
         <Header/>
         <Navbar />
         <div className="AppContent">
-          <Route path="/Profile" render={ () => <Profile State={props.State} />} />
-          <Route path="/Dialogs" render={ () => <Dialogs State={props.State.DialogsPage} />} />
+          <Route path="/Profile" render={ () => 
+              <Profile 
+                  ProfilePage={props.State.ProfilePage} 
+                  newPostText={props.State.ProfilePage.newPostText} 
+                  dispatch={props.dispatch}  
+              />} />
+          <Route path="/Dialogs" render={ () => 
+              <Dialogs 
+                  State={props.State.DialogsPage} 
+                  newMessageText={props.State.DialogsPage.newMessageText}
+                  addMessage={props.addMessage} 
+                  updateNewMessageText={props.updateNewMessageText} 
+              />} />
           <Route path="/News" render={ () => <News />} />
           <Route path="/Music" render={ () => <Music />} />
           <Route path="/Settings" render={ () => <Settings />} />
