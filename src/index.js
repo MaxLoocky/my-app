@@ -4,16 +4,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store from './redax/State';
+import { BrowserRouter } from 'react-router-dom';
 
 let rerenderEntireTree = (State) => {
   ReactDOM.render(
     <React.StrictMode>
+      <BrowserRouter>
         <App 
             State={State} 
             dispatch={store.dispatch.bind(store)} 
             addMessage={store.addMessage.bind(store)} 
             updateNewMessageText={store.updateNewMessageText.bind(store)} 
         />
+      </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
   );
